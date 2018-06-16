@@ -1,18 +1,18 @@
-## MOAC Pangu 0.8.x 
+、## MOAC Pangu 0.8.x
 
 ### This release is for MOAC project Pangu 0.8.2:
 
 Release Date: 04/30/2018
 
-This release is for both mainnet and testnet. 
+This release is for both mainnet and testnet.
 The mainnet was launched on April 30th, 2018.
 
 **Updates：**
 
-* Added the community message in the [genesis block](http://explorer.moac.io/block/0). 
+* Added the community message in the [genesis block](http://explorer.moac.io/block/0).
 * Updated the system contract to fix future send issue.
 * The SCS ports were loaded and will be ready to use after the mainnet is launched and testing is finished for SCS.
-* Fixed an issue of pending transactions . 
+* Fixed an issue of pending transactions .
 * Removed config file and put the configs in the source files.
 * [MOAC explorer](http://explorer.moac.io/), (*mainnet*)
 * [MOAC testnet explorer](http://47.75.144.55:3000/home), (*testnet*)
@@ -75,9 +75,9 @@ The default direcotry of testnet is:
 
 
 #### Debian/Ubuntu/CentOS Linux
- 
+
  [Binary package for Linux](https://github.com/MOACChain/moac-core/releases/download/0.8.2/pangu0.8.2.ubuntu.tar.gz)
- 
+
 Untar the file using tar, under the directory
 
 To start connecting with mainnet
@@ -91,12 +91,12 @@ To enable the console, can use:
 	./moac console
 	./moac --testnet console
 
-A testnet directory will be created under 
+A testnet directory will be created under
 
 	$HOME/.moac/testnet/
 and some info should be seen as:
 
-    INFO [03-24|11:24:26.506] 86161:IPC endpoint closed: /home/user/.moac/testnet/moac.ipc 
+    INFO [03-24|11:24:26.506] 86161:IPC endpoint closed: /home/user/.moac/testnet/moac.ipc
 
 from another terminal, run moac again to attach the running node
 
@@ -112,26 +112,26 @@ To see the help, use
 
 This version only work with "--test" option, not working with mainnet yet.
 
-Untar the file using tar, under the directory 
+Untar the file using tar, under the directory
 
 	moac.exe
 	moac.exe --testnet
 
-To see the help, use 
+To see the help, use
 	moac.exe --help
 
-To enable the console, can use: 
+To enable the console, can use:
 
 	moac.exe --testnet console
 
-A testnet directory will be created under 
+A testnet directory will be created under
 
-	C:\Users\xxxxxx\AppData\Roaming\MoacNode 
-	
+	C:\Users\xxxxxx\AppData\Roaming\MoacNode
+
 and some info should be seen as:
 
 	IPC endpoint opened: \\.\pipe\moac.ipc
-	
+
 from another terminal, run moac again to attach the running node
 
 	./moac.exe attach \\.\pipe\moac.ipc
@@ -149,7 +149,7 @@ If console is not open, open the console using the instructions from above.
 	`> miner.start()`
 
 3. check if miner has mined any moac by checking:
-	
+
 	`> mc.getBalance(mc.accounts[0])`
 
 4. create another account
@@ -185,7 +185,7 @@ Send moac from one account to another
 	> Send(mc.accounts[0], '', mc.accounts[1], 0.1)
 
 FutureSend is a good example to test the System Contract
-performance. It will send a mc transaction using the 
+performance. It will send a mc transaction using the
 System Contract at a certain block. If the input block
 number is smaller than current block number, the transaction
 will fail.
@@ -214,10 +214,10 @@ To use the function, first load the file under the console:
 	> loadScript("sysinfo_test.js")
 
 Then run the function:
-	
+
 	> genesisInfo.CommunityMsg()
 	"313936392C415250414E45542E313937332C5443502F49502E20323030392C426974636F696E2E2068656C6C6F2032303138EFBC8C4D4F414320697320636F6D696E672E"
 
 These messages are in HEX format, you need a [HEX to ASCII converter](https://www.rapidtables.com/convert/number/hex-to-ascii.html) to see the texts.
-There are other messages in the contract made by the contributors. 
+There are other messages in the contract made by the contributors.
 Thanks very much for all who contributes to the project!
