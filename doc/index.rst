@@ -50,7 +50,21 @@ Welcome to MOAC documentation
    zrefreshchain
    zreward
    zscsnodes
-
+   7.1_microchainintro
+   7.5_flush
+   7.9_reward
+   MicroChainDAPPDeveloper
+   MicroChainSCSMiner
+   MicroChainUsers
+   MicroChainVNODEProxy
+   SCSminer
+   TXdebug
+   zbackupchain
+   zchainuser
+   zmicrochain
+   zmicrochain01
+   zmonitorchain
+   zvnode-proxy
 
 Indices and tables
 ^^^^^^^^^^^^^^^^^^
